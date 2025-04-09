@@ -1,4 +1,3 @@
-
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { Content, Category } from '../types/content';
 import mockData from '../data/mockData.json';
@@ -41,7 +40,7 @@ export const api = createApi({
         const foundContent = content.find((item: Content) => item.id === id);
         return { data: foundContent };
       },
-      providesTags: (id) => [{ type: 'Content', id }],
+      providesTags: (_result, _error, id) => [{ type: 'Content', id }],
     }),
     
     addContent: builder.mutation<Content, Omit<Content, 'id' | 'createdAt'>>({
