@@ -1,0 +1,60 @@
+
+{
+  "categories": [
+    { "id": "cat1", "name": "Technology" },
+    { "id": "cat2", "name": "Business" },
+    { "id": "cat3", "name": "Education" },
+    { "id": "cat4", "name": "Entertainment" }
+  ],
+  "content": [
+    {
+      "id": "text1",
+      "title": "Introduction to React",
+      "description": "Learn the basics of React framework",
+      "categoryId": "cat1",
+      "createdAt": "2025-04-05T10:30:00Z",
+      "contentType": "text",
+      "content": "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications."
+    },
+    {
+      "id": "quiz1",
+      "title": "JavaScript Fundamentals Quiz",
+      "description": "Test your knowledge of JavaScript basics",
+      "categoryId": "cat1",
+      "createdAt": "2025-04-03T14:15:00Z",
+      "contentType": "quiz",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "What is JavaScript?",
+          "options": [
+            { "id": "opt1", "text": "A programming language" },
+            { "id": "opt2", "text": "A markup language" },
+            { "id": "opt3", "text": "A database system" }
+          ],
+          "correctOptionId": "opt1"
+        },
+        {
+          "id": "q2",
+          "question": "Which keyword is used to declare variables in JavaScript?",
+          "options": [
+            { "id": "opt1", "text": "var" },
+            { "id": "opt2", "text": "int" },
+            { "id": "opt3", "text": "string" }
+          ],
+          "correctOptionId": "opt1"
+        }
+      ]
+    },
+    {
+      "id": "media1",
+      "title": "Introduction to Redux",
+      "description": "Video tutorial on Redux basics",
+      "categoryId": "cat1",
+      "createdAt": "2025-04-07T09:45:00Z",
+      "contentType": "media",
+      "mediaType": "video",
+      "mediaUrl": "https://example.com/video.mp4"
+    }
+  ]
+}
