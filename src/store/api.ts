@@ -41,7 +41,7 @@ export const api = createApi({
         const foundContent = content.find((item: Content) => item.id === id);
         return { data: foundContent };
       },
-      providesTags: (result, error, id) => [{ type: 'Content', id }],
+      providesTags: (id) => [{ type: 'Content', id }],
     }),
     
     addContent: builder.mutation<Content, Omit<Content, 'id' | 'createdAt'>>({

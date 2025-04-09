@@ -2,6 +2,17 @@
 
 This application is a content management system (CMS) that follows a **unidirectional data flow pattern** using Redux Toolkit and RTK Query.
 
+#### Project Setup
+
+```
+
+git clone https://github.com/Patel-Muhammad/cms.git
+cd cms
+npm install
+npm run dev
+
+```
+
 #### Data Flow
 
 1. **User interacts** with UI components  
